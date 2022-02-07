@@ -10,17 +10,20 @@
     </head>
     <body>
         <section>
-            <ol>
-                <li>
+            <div class="navgator">
+                <button id="btnCalc" href="#" class="btnSection">
                     Calculadora
-
-                    <div class="navgator">
-                        <a href="#">Calculadora</a>
-                        <a href="#">Cambio</a>
-                        <a href="#">Conversor</a>
-                        <span>__</span>
-                    </div>
-                    <div class="calcResult"></div>
+                </button>
+                <button id="btnCamb" class="btnSection" href="#">Cambio</button>
+                <button id="btnConv" class="btnSection" href="#">
+                    Conversor
+                </button>
+            </div>
+            <span class="sectionActive"></span>
+            <ul>
+                <!-- Calculadora -->
+                <li id="secCalc" class="navgatorItem red">
+                    <div class="displayResult"></div>
                     <div class="history"></div>
 
                     <table>
@@ -56,13 +59,15 @@
                         </tr>
                     </table>
                 </li>
-                <!-- Calculadora -->
-
-                <li>Moedas</li>
-                <!-- fim Moedas -->
-                <li>Unit Conversão</li>
-                <li>Conversão</li>
-            </ol>
+                <!-- Cambio -->
+                <li id="secCamb" class="navgatorItem yellow displayNone">
+                    Cambio
+                </li>
+                <!-- conversão -->
+                <li id="secConv" class="navgatorItem blue displayNone">
+                    Conversão
+                </li>
+            </ul>
         </section>
 
         <footer></footer>
