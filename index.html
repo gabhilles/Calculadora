@@ -6,12 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <section>
             <div class="navgator">
-                <button id="btnCalc" href="#" class="btnSection">
+                <button id="btnCalc" href="#" class="btnSection btnFocus">
                     Calculadora
                 </button>
                 <button id="btnCamb" class="btnSection" href="#">Cambio</button>
@@ -19,58 +19,22 @@
                     Conversor
                 </button>
             </div>
-            <span class="sectionActive"></span>
+            <div class="sectionSlider"></div>
             <ul>
                 <!-- Calculadora -->
-                <li id="secCalc" class="navgatorItem red">
+                <li id="secCalc">
                     <div class="displayResult"></div>
                     <div class="history"></div>
-
-                    <table>
-                        <tr>
-                            <td>C</td>
-                            <td>%</td>
-                            <td><</td>
-                            <td>/</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>X</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>2</td>
-                            <td>1</td>
-                            <td>+</td>
-                        </tr>
-                        <tr>
-                            <td>00</td>
-                            <td>0</td>
-                            <td>.</td>
-                            <td>=</td>
-                        </tr>
-                    </table>
                 </li>
                 <!-- Cambio -->
-                <li id="secCamb" class="navgatorItem yellow displayNone">
-                    Cambio
-                </li>
+                <li id="secCamb" class="yellow displayNone">Cambio</li>
                 <!-- conversão -->
-                <li id="secConv" class="navgatorItem blue displayNone">
-                    Conversão
-                </li>
+                <li id="secConv" class="blue displayNone">Conversão</li>
             </ul>
         </section>
 
         <footer></footer>
-        <script src="./script.js"></script>
+        <script src="./js/anime.min.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
