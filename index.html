@@ -23,8 +23,46 @@
             <ul>
                 <!-- Calculadora -->
                 <li id="secCalc">
-                    <div class="displayResult"></div>
-                    <div class="history"></div>
+                    <div class="displayResult">
+                        <input
+                            type="text"
+                            readonly
+                            class="mathQuestion"
+                            name="question"
+                            value="25654652 x 9"
+                        />
+                        <div class="labelResult" for="result">Ans =</div>
+                        <input
+                            type="text"
+                            readonly
+                            class="mathResult"
+                            name="result"
+                            value="102931"
+                        />
+                    </div>
+                    <button id="btnHistory" class="buttonSecondary">?</button>
+                    <div class="calculatorGrid">
+                        <button class="buttonPrimary">C</button
+                        ><button class="buttonPrimary">%</button
+                        ><button class="buttonPrimary"><</button
+                        ><button class="buttonPrimary">/</button
+                        ><button class="buttonPrimary">7</button
+                        ><button class="buttonPrimary">8</button
+                        ><button class="buttonPrimary">9</button
+                        ><button class="buttonPrimary">X</button
+                        ><button class="buttonPrimary">4</button
+                        ><button class="buttonPrimary">5</button
+                        ><button class="buttonPrimary">6</button
+                        ><button class="buttonPrimary">-</button
+                        ><button class="buttonPrimary">4</button
+                        ><button class="buttonPrimary">5</button
+                        ><button class="buttonPrimary">6</button
+                        ><button class="buttonPrimary">+</button
+                        ><button class="buttonPrimary mg-bt-0">00</button
+                        ><button class="buttonPrimary mg-bt-0">0</button
+                        ><button class="buttonPrimary mg-bt-0">.</button
+                        ><button class="buttonPrimary mg-bt-0">=</button>
+                    </div>
                 </li>
                 <!-- Cambio -->
                 <li id="secCamb" class="yellow displayNone">Cambio</li>
