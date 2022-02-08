@@ -10,20 +10,21 @@
     </head>
     <body>
         <section>
-            <div class="navgator">
-                <button id="btnCalc" href="#" class="btnSection btnFocus">
+            <nav class="navgator">
+                <button id="btnCalc" href="#" class="btnSection btnActive">
                     Calculadora
                 </button>
                 <button id="btnCamb" class="btnSection" href="#">Cambio</button>
                 <button id="btnConv" class="btnSection" href="#">
                     Conversor
                 </button>
-            </div>
-            <div class="sectionSlider"></div>
-            <ul>
+            </nav>
+            <div class="btnUnderlined"></div>
+
+            <ul id="sectionList">
                 <!-- Calculadora -->
                 <li id="secCalc">
-                    <div class="displayResult">
+                    <div class="displayPrimary">
                         <input
                             type="text"
                             readonly
@@ -31,7 +32,7 @@
                             name="question"
                             value="25654652 x 9"
                         />
-                        <div class="labelResult" for="result">Ans =</div>
+                        <div class="labelResult" for="result">Res =</div>
                         <input
                             type="text"
                             readonly
@@ -41,38 +42,39 @@
                         />
                     </div>
                     <button id="btnHistory" class="buttonSecondary">?</button>
+
                     <div class="calculatorGrid">
-                        <button class="buttonPrimary">C</button
+                        <button class="buttonPrimary ml-10n">C</button
                         ><button class="buttonPrimary">%</button
                         ><button class="buttonPrimary"><</button
-                        ><button class="buttonPrimary">/</button
+                        ><button class="buttonPrimary btn-color mr-10">/</button
                         ><button class="buttonPrimary">7</button
                         ><button class="buttonPrimary">8</button
                         ><button class="buttonPrimary">9</button
-                        ><button class="buttonPrimary">X</button
+                        ><button class="buttonPrimary btn-color">X</button
                         ><button class="buttonPrimary">4</button
                         ><button class="buttonPrimary">5</button
                         ><button class="buttonPrimary">6</button
-                        ><button class="buttonPrimary">-</button
+                        ><button class="buttonPrimary btn-color">-</button
                         ><button class="buttonPrimary">4</button
                         ><button class="buttonPrimary">5</button
                         ><button class="buttonPrimary">6</button
-                        ><button class="buttonPrimary">+</button
-                        ><button class="buttonPrimary mg-bt-0">00</button
-                        ><button class="buttonPrimary mg-bt-0">0</button
-                        ><button class="buttonPrimary mg-bt-0">.</button
-                        ><button class="buttonPrimary mg-bt-0">=</button>
+                        ><button class="buttonPrimary btn-color">+</button
+                        ><button class="buttonPrimary mb-0">00</button
+                        ><button class="buttonPrimary mb-0">0</button
+                        ><button class="buttonPrimary mb-0">.</button
+                        ><button class="buttonPrimary mb-0 btn-color">=</button>
                     </div>
                 </li>
                 <!-- Cambio -->
-                <li id="secCamb" class="yellow displayNone">Cambio</li>
+                <li id="secCamb" class="yellow">Cambio</li>
                 <!-- conversão -->
-                <li id="secConv" class="blue displayNone">Conversão</li>
+                <li id="secConv" class="blue">Conversão</li>
             </ul>
         </section>
 
         <footer></footer>
         <script src="./js/anime.min.js"></script>
-        <script src="./js/script.js"></script>
+        <script src="./js/calculator.js"></script>
     </body>
 </html>
