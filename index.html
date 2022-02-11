@@ -11,60 +11,65 @@
     <body>
         <section>
             <nav class="navgator">
-                <button id="btnCalc" href="#" class="btnSection btnActive">
-                    Calculadora
-                </button>
+                <button id="btnCalc" href="#" class="btnSection btnActive">Calculadora</button>
                 <button id="btnCamb" class="btnSection" href="#">Cambio</button>
-                <button id="btnConv" class="btnSection" href="#">
-                    Conversor
-                </button>
+                <button id="btnConv" class="btnSection" href="#">Conversor</button>
             </nav>
             <div class="btnUnderlined"></div>
 
             <ul id="sectionList">
                 <!-- Calculadora -->
                 <li id="secCalc">
-                    <div class="displayPrimary">
-                        <input
-                            type="text"
-                            readonly
-                            class="mathQuestion"
-                            name="question"
-                            value="25654652 x 9"
-                        />
-                        <div class="labelResult" for="result">Res =</div>
-                        <input
-                            type="text"
-                            readonly
-                            class="mathResult"
-                            name="result"
-                            value="102931"
-                        />
-                    </div>
-                    <button id="btnHistory" class="buttonSecondary">?</button>
+                    <form class="calculator" name="calculator">
+                        <div class="displayPrimary">
+                            <input type="text" readonly class="mathQuestion" name="question" value="" />
+                            <div class="labelResult" for="result">Res =</div>
+                            <input type="text" readonly class="mathResult" name="result" value="" />
+                        </div>
+                        <button id="btnHistory" class="buttonSecondary">?</button>
 
-                    <div class="calculatorGrid">
-                        <button class="buttonPrimary ml-10n">C</button
-                        ><button class="buttonPrimary">%</button
-                        ><button class="buttonPrimary"><</button
-                        ><button class="buttonPrimary btn-color mr-10">/</button
-                        ><button class="buttonPrimary">7</button
-                        ><button class="buttonPrimary">8</button
-                        ><button class="buttonPrimary">9</button
-                        ><button class="buttonPrimary btn-color">X</button
-                        ><button class="buttonPrimary">4</button
-                        ><button class="buttonPrimary">5</button
-                        ><button class="buttonPrimary">6</button
-                        ><button class="buttonPrimary btn-color">-</button
-                        ><button class="buttonPrimary">4</button
-                        ><button class="buttonPrimary">5</button
-                        ><button class="buttonPrimary">6</button
-                        ><button class="buttonPrimary btn-color">+</button
-                        ><button class="buttonPrimary mb-0">00</button
-                        ><button class="buttonPrimary mb-0">0</button
-                        ><button class="buttonPrimary mb-0">.</button
-                        ><button class="buttonPrimary mb-0 btn-color">=</button>
-                    </div>
+                        <div class="calculatorGrid">
+                            <button type="button" value="C" class="btn-c buttonPrimary">C</button>
+
+                            <button type="button" value="%" class="btn-percentage buttonPrimary">%</button>
+
+                            <button type="button" value="<" class="btn-delete buttonPrimary">0</button>
+
+                            <button type="button" value="/" class="btn-division buttonPrimary btn-color">/</button>
+
+                            <button type="button" value="7" class="btn-7 buttonPrimary">7</button>
+
+                            <button type="button" value="8" class="btn-8 buttonPrimary">8</button>
+
+                            <button type="button" value="9" class="btn-9 buttonPrimary">9</button>
+
+                            <button type="button" value="*" class="btn-multiply buttonPrimary btn-color">X</button>
+
+                            <button type="button" value="4" class="btn-4 buttonPrimary">4</button>
+
+                            <button type="button" value="5" class="btn-5 buttonPrimary">5</button>
+
+                            <button type="button" value="6" class="btn-6 buttonPrimary">6</button>
+
+                            <button type="button" value="-" class="btn-subtraction buttonPrimary btn-color">-</button>
+
+                            <button type="button" value="1" class="btn-1 buttonPrimary">1</button>
+
+                            <button type="button" value="2" class="btn-2 buttonPrimary">2</button>
+
+                            <button type="button" value="3" class="btn-3 buttonPrimary">3</button>
+
+                            <button type="button" value="+" class="btn-add buttonPrimary btn-color">+</button>
+
+                            <button type="button" value="00" class="btn-zerozero buttonPrimary">00</button>
+
+                            <button type="button" value="0" class="btn-zero buttonPrimary">0</button>
+
+                            <button type="button" value="." class="btn-comma buttonPrimary">.</button>
+
+                            <button type="button" value="=" class="btn-equal buttonPrimary btn-color">=</button>
+                        </div>
+                    </form>
                 </li>
                 <!-- Cambio -->
                 <li id="secCamb" class="yellow">Cambio</li>
@@ -74,7 +79,11 @@
         </section>
 
         <footer></footer>
+
         <script src="./js/anime.min.js"></script>
+
+        <script src="/js/sliderSection.js"></script>
+        <script src="./js/controller/CalcController.js"></script>
         <script src="./js/calculator.js"></script>
     </body>
 </html>

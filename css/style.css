@@ -32,12 +32,13 @@ body {
 }
 
 section {
+    border-radius: 10px;
     overflow-x: hidden;
     display: block;
     background-color: var(--black);
     width: 375px;
     height: 836px;
-    padding: 0 25px;
+    padding: 0 25px 25px 25px;
     box-shadow: var(--shadowDark);
 }
 
@@ -92,13 +93,13 @@ section ul {
 
 section ul li {
     width: 325px;
-    height: 688px;
+    height: 691px;
 
 }
 
 .displayPrimary {
     padding: 24px;
-    width: 322px;
+    width: 100%;
     height: 173px;
     background-color: var(--black);
     box-shadow: var(--shadowBlack)
@@ -120,7 +121,7 @@ section ul li {
     border: none;
     background-color: transparent;
     font-size: 3.5rem;
-    color: var(--gray);
+    color: var(--grayLight);
     float: right;
     text-align: right;
     width: 79%;
@@ -145,20 +146,18 @@ section ul li {
 
 
 
-
-
-
 .calculatorGrid {
     margin-top: 53px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: var(--black);
-
+    width: 60px;
+    height: 60px;
 
 }
 
 .buttonPrimary {
-    margin: 0px auto 30px auto;
+    margin: 0px 28px 29px 0;
     border: none;
     background-color: var(--black);
     border-radius: 100%;
@@ -167,19 +166,21 @@ section ul li {
     height: 60px;
     font-size: 3.5rem;
     color: var(--grayDark);
+    cursor: pointer;
 }
 
 .buttonSecondary {
     z-index: 2000;
-    margin: 17px 8px 0px 0px;
+    margin: 25px 8px 0px 0px;
     border: none;
     background-color: var(--black);
     box-shadow: var(--shadowDark);
     border-radius: 100%;
     width: 45px;
     height: 45px;
-    font-size: 3.5rem;
+    font-size: 2.4rem;
     color: var(--grayDark);
+    cursor: pointer;
 }
 
 .buttonPrimary:active {
