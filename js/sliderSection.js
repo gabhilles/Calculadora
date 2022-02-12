@@ -31,7 +31,7 @@ var changeActive = () => {
                 targets: btnUnderlined,
                 width: widthBtnCalc + 'px',
                 translateX: 0,
-                easing: 'easeOutBack',
+                easing: 'easeOutElastic',
             });
             calcBtn.classList.add('btnActive');
             cambBtn.classList.remove('btnActive');
@@ -49,7 +49,7 @@ var changeActive = () => {
                 targets: btnUnderlined,
                 width: widthBtnCamb + 'px',
                 translateX: 142,
-                easing: 'easeOutBack',
+                easing: 'easeOutElastic',
             });
             calcBtn.classList.remove('btnActive');
             cambBtn.classList.add('btnActive');
@@ -67,7 +67,7 @@ var changeActive = () => {
                 targets: btnUnderlined,
                 width: widthBtnConv + 'px',
                 translateX: 253,
-                easing: 'easeOutBack',
+                easing: 'easeOutElastic',
             });
             calcBtn.classList.remove('btnActive');
             cambBtn.classList.remove('btnActive');
